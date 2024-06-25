@@ -1,12 +1,5 @@
 {% extends 'template/base.html' %}
 {% block content %}
-<!--
-<div>
-    {% for x in blog_no %}
-        <h2> {{x.title }} </h2>
-       <p>{{x.description}} </p> 
-    {% endfor %}
-</div>-->
 
 <div>
     <form method = "post" action = "{%url 'home' %}" enctype= "multipart/form-data">
@@ -14,6 +7,8 @@
     {{form}}
     <button>Submit</button>
     </form>
+
+<a href=" {% url 'posts' %}">  See What others are posting</a>
     
 </div>
 {% endblock content %}
