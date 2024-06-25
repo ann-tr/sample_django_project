@@ -1,0 +1,10 @@
+{% extends 'template/base.html' %}
+{% block content %}
+
+<div>
+    {% for x in blog_no %}
+        <h2> {{x.title }} </h2>
+       <p>{{x.description}} </p> 
+    {% endfor %}
+</div>
+{% endblock content %}
